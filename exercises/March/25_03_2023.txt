@@ -1,0 +1,43 @@
+Exercise 1 Create a 1D numpy array with the values [1, 2, 3, 4, 5]. Square all the values in the array and return the result.
+Input [1, 2, 3, 4, 5]
+Expected Output [ 1 4 9 16 25]
+
+Exercise 2 Create a 2D numpy array with the shape (3, 3) and the values [[1, 2, 3], [4, 5, 6], [7, 8, 9]]. Replace all the values in the array that are greater than 5 with the value 10.
+Input [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Expected Output
+[[ 1 2 3]
+[ 4 5 10]
+[10 10 10]]
+
+Exercise 3 Create a function that takes in two 1D numpy arrays as input and returns a new array where each value is the product of the corresponding values in the two input arrays.
+Input [1, 2, 3], [4, 5, 6]
+Expected Output [ 4 10 18]
+
+Exercise 4 Create a function that takes in a 2D numpy array as input and returns a new array where each value is the product of the values in its corresponding row.
+Input [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Expected Output [ 6 120 504]
+
+Exercise 5 Create a function that takes in a 2D numpy array as input and returns a new array where each value is the product of the values in its corresponding column.
+Input [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Expected Output [ 28 80 162]
+
+Exercise 6 Create a function that takes in a 2D numpy array as input and returns the transpose of the array.
+Input [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Expected Output
+[[1 4 7]
+[2 5 8]
+[3 6 9]]
+
+Exercise 7 Create a function that takes in a 2D numpy array as input and returns a new array where all the values in each row have been sorted in ascending order.
+Input [[3, 2, 1], [6, 5, 4], [9, 8, 7]]
+Expected Output
+[[1 2 3]
+[4 5 6]
+[7 8 9]]
+
+Exercise 8 Create a function that takes in a 2D numpy array as input and returns a new array where all the values in each column have been sorted in descending order.
+Input [[3, 2, 1], [6, 5, 4], [9, 8, 7]]
+Expected Output
+[[9 8 7]
+[6 5 4]
+[3 2 1]]

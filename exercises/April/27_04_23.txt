@@ -1,0 +1,130 @@
+Create a class called Person with properties name and age. Implement a method called greet() that prints out a greeting message.
+Input: 
+p1 = Person("John", 35)
+p1.greet()
+Expected output: "Hello, my name is John and I am 35 years old."
+
+Create a class called Rectangle with properties width and height. Implement methods area() and perimeter() that return the area and perimeter of the rectangle.
+Input: 
+r = Rectangle(4, 5)
+print("Area:",r.area(),", Perimeter:",r.perimeter())
+Expected output: Area: 20, Perimeter: 18
+
+Create a class called BankAccount with properties account_number and balance. Implement methods deposit(amount) and withdraw(amount) that add or subtract an amount from the balance.
+Input: 
+a = BankAccount(12345, 500)
+a.printAccount()
+a.deposit(100)
+a.printAccount()
+a.withdraw(200)
+a.printAccount()
+Output: 
+Account: 12345, Current balance: 500
+Account: 12345, Current balance: 600
+Account: 12345, Current balance: 400
+
+
+Create a class called Car with properties brand, model, and year. Implement a method called description() that describes the car.
+Input: 
+Car("Toyota", "Camry", 2022).description()
+
+Expected output: "This is a 2022 Toyota Camry."
+
+Create a class called Book with properties title, author, and year. Implement a method called age() that returns the age of the book in years.
+Input: 
+Book("To Kill a Mockingbird", "Harper Lee", 1960).age()
+Expected output: Age of book: 63
+
+Create a class called Employee with properties name, position, and salary. Implement a method called raise_salary(percent) that increases the employee's salary by a given percentage.
+Input: 
+Employee("Bob", "Manager", 50000).raise_salary(0.1)
+Expected output: Current salary: 55000 (after 10% raise)
+
+Create a class called Circle with property radius. Implement methods area() and circumference() that return the area and circumference of the circle.
+Input:
+c = Circle(5)
+print("Area:", c.area(), ", Circumference:", c.circumference())
+Expected output: Area: 78.5398, Circumference: 31.4159
+
+Create a class called Student with properties name and grade. Implement a method called promote() that increases the grade by 1.
+Input:
+s = Student("Alice", 10)
+s.promote()
+print(s.grade)
+Expected output: 11
+
+Create a class called Bank with properties name and balance. Implement a method called transfer(to_account, amount) that transfers a certain amount from the current account to another account.
+Input:
+b1 = Bank("ABC Bank", 1000)
+b2 = Bank("XYZ Bank", 500)
+b1.transfer(b2, 200)
+print("ABC Bank balance:", b1.balance, "XYZ Bank balance:", b2.balance)
+Expected output: ABC Bank balance: 800, XYZ Bank balance: 700
+
+Create a class called Triangle with properties side1, side2, and side3. Implement a method called is_equilateral() that returns True if the triangle is equilateral (all sides are equal) and False otherwise.
+Input:
+t1 = Triangle(3, 3, 3)
+t2 = Triangle(3, 4, 5)
+print(t1.is_equilateral())
+print(t2.is_equilateral())
+Expected output:    True 
+                    False
+
+Create a class called ShoppingCart with a property called items (a list). Implement methods add_item(item) and remove_item(item) that add or remove an item from the cart.
+Input:
+cart = ShoppingCart(["apple", "banana", "orange"])
+cart.add_item("grape")
+cart.remove_item("banana")
+print(cart.items)
+Expected output: ["apple", "orange", "grape"]
+
+Create a class called BankAccount with properties account_number and balance. Implement methods deposit(amount) and withdraw(amount) that add or subtract an amount from the balance.
+Input: 
+a = BankAccount(12345, 500)
+a.printAccount()
+a.deposit(100)
+a.printAccount()
+a.withdraw(200)
+a.printAccount()
+Output: 
+Account: 12345, Current balance: 500
+Account: 12345, Current balance: 600
+Account: 12345, Current balance: 400
+Create a class called Bank with properties name and accounts. Implement methods add_account(account) and remove_account(account_number) that add or remove an account from the bank's accounts list.
+Input: 
+bank1=Bank("ABC Bank", [BankAccount(12345, 500), BankAccount(67890, 1000)])
+bank1.add_account(BankAccount(13579, 250))
+bank1.remove_account(BankAccount(67890, 1000))
+Expected output: 
+ABC Bank accounts: [BankAccount(12345, 500), BankAccount(67890, 1000), BankAccount(13579, 250)]
+ABC Bank accounts: [BankAccount(12345, 500), BankAccount(13579, 250)]
+
+Create a class called Student with properties name, age, and score. Implement the __str__ method so that it prints out like the following example: 
+Input:
+s = Student("John", 20, 80)
+print(s)
+Output:
+Student("John",20,80)
+Now, create a class called Classroom with properties teacher and students. Implement methods add_student(student) and remove_student(student_name) that add or remove a student from the classroom's students list.
+Input:
+c = Classroom("Mr. Smith", [Student("John", 20, 80), Student("Jane", 19, 85)])
+c.add_student(Student("Bob", 21, 90))
+c.remove_student("Jane")
+print(c)
+Output:
+Teacher: Mr. Smith, Students: [Student("John", 20, 80), Student("Bob", 21, 90)]
+
+Create a class called Car with properties make, model, and year. Implement the __str__ method so that it prints out like the following example:  
+Input:
+c = Car("Toyota", "Corolla", 2020)
+print(c)
+Output:
+Car("Toyota","Corolla",2020)
+Now, create a class called Dealership with properties name and inventory. Implement methods add_car(car) and remove_car(car_make, car_model) that add or remove a car from the dealership's inventory list.
+Input:
+d = Dealership("ABC Auto", [Car("Toyota", "Corolla", 2020), Car("Honda", "Civic", 2019)])
+d.add_car(Car("Ford", "Mustang", 2021))
+d.remove_car("Toyota", "Corolla")
+print(d)
+Output:
+Name: ABC Auto, Inventory: [Car("Honda", "Civic", 2019), Car("Ford", "Mustang", 2021)]

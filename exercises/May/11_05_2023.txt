@@ -1,0 +1,184 @@
+1.1 Create a class called Person with properties name and age. 
+Create a subclass called Student that inherits from Person and adds a property grade. 
+Implement a method called display() in both classes that prints out the name, age, and grade (if applicable) of the person/student.
+
+Input: 
+a=Person("John", 35) 
+b=Student("Jane", 18, "B")
+a.display()
+b.display()
+Expected output: 
+John is 35 years old.
+Jane is 18 years old and has a grade of B.
+1.2 
+Create a subclass called CollegeStudent that inherits from Student and adds a property major. 
+Implement a method called display() that prints out the name, age, grade, and major of the college student.
+
+Input: 
+d=CollegeStudent("Doe", 25,"A", "Computer Science")
+d.display()
+Expected output: 
+Doe is 25 years old, majors in Computer Science and has a grade of A.
+
+2. Create a class called Shape with properties name and color. 
+Create two subclasses called Circle and Rectangle that inherit from Shape and add properties radius and width/height, respectively. 
+Implement methods area() and perimeter() in both subclasses that return the area and perimeter of the shape.
+
+Input: 
+c=Circle("C", "red", 5) 
+r=Rectangle("R", "blue", 4, 6)
+c.area()
+c.perimeter()
+r.area()
+r.perimeter()
+Expected output: 
+Area of the red circle C: 78.5 
+Perimeter of the red circle C: 31.4 
+Area of the blue rectangle R: 24 
+Perimeter of the blue rectangle R: 20
+
+3. Create a class called Person with properties name and age. 
+Create a subclass called Employee that inherits from Person and adds properties id_number and salary. 
+Implement a method called display() in both classes that prints out the name, age, id number, and salary of the person/employee.
+
+Input: 
+p=Person("John", 35) 
+e=Employee("Jane", 25, 12345, 50000)
+p.display()
+e.display()
+Expected output: 
+John is 35 years old.
+Jane is 25 years old, has an ID of 12345, and a salary of $50,000.
+
+4. Create a class called Animal with a property name. 
+Create two subclasses called Dog and Cat that inherit from Animal and add a property breed. 
+Implement a method called speak() in both subclasses that prints out the sound the animal makes and their breed.
+
+Input: 
+d=Dog("Fido", "Golden Retriever") 
+c=Cat("Whiskers", "Siamese")
+d.speak()
+c.speak()
+Expected output: 
+Fido says woof and is a Golden Retriever.
+Whiskers says meow and is a Siamese.
+
+5.1 
+Create a class called BankAccount with properties account_number and balance. Implement methods deposit(amount) and withdraw(amount) that add or subtract an amount from the balance.
+Input: 
+a = BankAccount(12345, 500)
+print(a)
+a.deposit(100)
+print(a)
+a.withdraw(200)
+print(a)
+Output: 
+Account: 12345, Current balance: 500
+Account: 12345, Current balance: 600
+Account: 12345, Current balance: 400
+
+then
+5.2
+Create a subclass called SavingsAccount that inherits from BankAccount and adds a property interest_rate. 
+Implement a method called add_interest() in the SavingsAccount class that adds interest to the account balance.
+
+Input: 
+b=SavingsAccount(67890, 1000, 0.05)
+b.deposit(100)
+print(b)
+b.withdraw(200)
+print(b)
+b.add_interest()
+print(b)
+Expected output: 
+Account: 67890, Current balance: 1000
+Account: 67890, Current balance: 1100
+Account: 67890, Current balance: 900
+Account: 67890, Current balance: 945
+
+then
+5.3
+Create a subclass called CheckingAccount that inherits from SavingsAccount and adds a property overdraft_limit. 
+Implement a method called withdraw() in the CheckingAccount class that allows a user to withdraw money from the account, but prevents them from withdrawing more than their overdraft limit or their current balance.
+
+Input: 
+a=CheckingAccount(12345, 350, 200)
+a.withdraw(300)
+print(a)
+a.withdraw(200)
+print(a)
+a.Withdraw(180)
+Expected output: 
+Withdrawal failed. Exceed overdraft limit of 200.
+Account: 12345, Current balance: 150
+Withdrawal failed. Not enough balance.
+6.
+Financial Managing History of John Doe
+
+John Doe is a diligent individual who has demonstrated responsible financial management throughout his life. 
+Let's take a look at his financial journey, highlighting his banking activities using the provided class definitions.
+
+At the beginning of John's financial journey, he opened a Bank Account with an account number 12345 and an initial balance of $500. 
+This account, represented by the object `a` of the `BankAccount` class, allowed him to make deposits and withdrawals. 
+Initially, his account details were as follows:
+
+Account: 12345, Current balance: $500
+
+As John's financial situation improved, he decided to deposit an additional $100 into his Bank Account. 
+He used the `deposit` method provided by the `BankAccount` class, resulting in the following account details:
+
+Account: 12345, Current balance: $600
+
+At a later stage, John needed some funds from his Bank Account. 
+He withdrew $200 from his account using the `withdraw` method, 
+resulting in the following updated account details:
+
+Account: 12345, Current balance: $400
+
+John's diligent financial management skills didn't stop there. 
+He wanted to optimize his savings, so he decided to open a Savings Account. 
+He created a Savings Account object, `b`, with an account number of 67890, an initial balance of $1,000, and an interest rate of 0.05. 
+The account details were as follows:
+
+Account: 67890, Current balance: $1,000
+
+Similar to his Bank Account, John could also deposit and withdraw funds from his Savings Account. 
+He deposited an additional $100, increasing the balance to $1,100:
+
+Account: 67890, Current balance: $1,100
+
+To cover some expenses, John decided to withdraw $200 from his Savings Account, resulting in the following updated account details:
+
+Account: 67890, Current balance: $900
+
+Understanding the importance of savings, John decided to wait for a month, the interest added 5% of his current balance to his Savings Account. 
+He used the `add_interest` method provided by the `SavingsAccount` class, which applied the interest rate to his current balance. 
+The updated account details were as follows:
+
+Account: 67890, Current balance: $945
+
+As John's financial journey progressed, he realized the need for a Checking Account that offered an overdraft limit. 
+He opened a Checking Account object, `c`, with an account number 13579, a balance of $350, and an overdraft limit of $200. 
+The initial account details were as follows:
+
+Account: 13579, Current balance: $350
+
+John attempted to withdraw $300 from his Checking Account, but it failed because it exceeded his overdraft limit.
+The account balance remained unchanged, and he received the following message:
+
+Withdrawal failed. Exceeded overdraft limit of $200.
+Account: 13579, Current balance: $350
+
+Learning from his previous experience, John made a more reasonable withdrawal of $200, which was within his overdraft limit. The account balance was updated as follows:
+
+Account: 13579, Current balance: $150
+
+Lastly, John attempted to withdraw $180 from his Checking Account. Unfortunately, he did not have sufficient balance to cover the withdrawal. 
+Therefore, the withdrawal failed, and the account balance remained unchanged:
+
+Withdrawal failed. Not enough balance.
+Account: 13579, Current balance: $150
+
+In conclusion, John Doe demonstrated responsible financial management by utilizing different types of bank accounts and adhering to their respective constraints. 
+Throughout his financial journey, he effectively managed his finances, making deposits, withdrawals, and even considering interest rates and overdraft limits. 
+These practices showcase his commitment to maintaining a healthy financial status and making informed decisions.

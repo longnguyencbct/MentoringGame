@@ -1,0 +1,26 @@
+Exercise 1: Create a function that takes in a 1D numpy array as input and returns the indices of the top n values in the array, where n is an integer input to the function.
+Input: [5, 3, 1, 2, 4], n=3
+Expected Output: [0, 4, 1]
+
+Exercise 2: Create a function that takes in a 1D numpy array as input and returns the difference between the largest and smallest values in the array.
+Input: [2, 5, 1, 7, 3]
+Expected Output: 6
+
+Exercise 3: Create a function that takes in a 1D numpy array as input and returns a new array where each value is replaced with the average of the value and its neighboring values.
+Input: [1, 2, 3, 4, 5]
+Expected Output: [1.5, 2, 3, 4, 4.5]
+
+Exercise 4: Create a function that takes in a 2D numpy array as input and returns the row and column indices of the maximum value in the array.
+Input: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Expected Output: (2, 2)
+
+Exercise 6: Create a function that takes in a 2D numpy array and returns a new array where each value is the sum of the values in its corresponding diagonal.
+Input: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Expected Output: [15, 15]
+
+Exercise 9: Create a function that takes in two 2D numpy arrays as input and returns a new array where each value is the minimum value between the corresponding values in the two input arrays.
+Input: [[1, 2, 3], [4, 5, 6], [7, 8, 9]], [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+Expected Output:
+[[1 2 3]
+[4 5 4]
+[3 2 1]]
